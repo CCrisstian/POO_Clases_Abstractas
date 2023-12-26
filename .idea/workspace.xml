@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a030e12-ebcc-47b9-a52a-93c7a4cbb934" name="Changes" comment="1ra Clase Abstracta y 2 clases hijas">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/EjemploForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Elementos/Select/Opcion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Elementos/SelectForm.java" afterDir="false" />
+    <list default="true" id="4a030e12-ebcc-47b9-a52a-93c7a4cbb934" name="Changes" comment="Main">
+      <change afterPath="$PROJECT_DIR$/Form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Elementos/TextAreaForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Elementos/TextAreaForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/EjemploForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/EjemploForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Elementos/SelectForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Elementos/SelectForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,18 +19,22 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Form.html" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2a3Gwp9fLLtFHCKZx0NvVVrZyCz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -42,6 +43,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.EjemploForm.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -83,12 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703545050125</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Main">
+      <option name="closed" value="true" />
+      <created>1703603177445</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703603177445</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1ra Clase Abstracta" />
     <MESSAGE value="1ra Clase Abstracta y 2 clases hijas" />
-    <option name="LAST_COMMIT_MESSAGE" value="1ra Clase Abstracta y 2 clases hijas" />
+    <MESSAGE value="Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main" />
   </component>
 </project>

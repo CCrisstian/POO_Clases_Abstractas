@@ -7,12 +7,8 @@ import java.util.List;
 
 public class SelectForm extends ElementoForm{
 
-/*------------ATRIBUTOS----------------*/
     private List<Opcion> opciones;
-/*------------ATRIBUTOS----------------*/
 
-
-/*------------CONSTRUCTOR----------------*/
     public SelectForm(String nombre) {
         super(nombre);
         this.opciones = new ArrayList<Opcion>();
@@ -22,11 +18,8 @@ public class SelectForm extends ElementoForm{
         super(nombre);
         this.opciones = opciones;
     }
-/*------------CONSTRUCTOR----------------*/
 
-
-/*------------MÉTODOS----------------*/
-    public SelectForm AddOpcion(Opcion opcion){
+    public SelectForm addOpcion(Opcion opcion){
         this.opciones.add(opcion);
         return this;
     }
@@ -43,15 +36,15 @@ public class SelectForm extends ElementoForm{
                     .append(opcion.getValor())
                     .append("'");
             if (opcion.isSelected()){
-                sb.append("selected");
+                sb.append(" selected");
+                this.valor = opcion.getValor();
             }
             sb.append(">")
                     .append(opcion.getNombre())
-                    .append("</option");
+                    .append("</option>");
         }
-        sb.append("</selected");
+        sb.append("</selected>");
         return sb.toString();
     }
-/*------------MÉTODOS----------------*/
 
 }
