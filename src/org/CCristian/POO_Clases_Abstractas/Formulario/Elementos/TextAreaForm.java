@@ -40,7 +40,7 @@ public class TextAreaForm extends ElementoForm{
 /*------------CONSTRUCTOR----------------*/
 
 
-    /*------------MÉTODOS----------------*/
+/*------------MÉTODOS----------------*/
     @Override
     public String DibujarHTML() {
         return "<TextArea name='"+this.nombre+
