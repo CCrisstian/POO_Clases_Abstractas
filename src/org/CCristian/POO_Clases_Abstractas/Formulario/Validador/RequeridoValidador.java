@@ -4,7 +4,7 @@ import java.util.stream.Stream;
 
 public class RequeridoValidador extends Validador{
 
-    protected String mensaje = "el campo es REQUERIDO!";
+    protected String mensaje = "el campo %s es REQUERIDO!";
 
     @Override
     public void setMensaje(String mensaje) {

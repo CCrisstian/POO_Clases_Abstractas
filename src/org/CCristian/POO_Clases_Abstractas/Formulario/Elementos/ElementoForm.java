@@ -1,21 +1,34 @@
 package org.CCristian.POO_Clases_Abstractas.Formulario.Elementos;
 
+import org.CCristian.POO_Clases_Abstractas.Formulario.Validador.Validador;
+
+import java.util.ArrayList;
+import java.util.List;
+
 abstract public class ElementoForm {
 
 /*------------ATRIBUTOS----------------*/
     protected String valor;
     protected String nombre;
+    private List<Validador> validadores;
+    private List<String> errores;
 /*------------ATRIBUTOS----------------*/
 
-
-/*------------SETTER----------------*/
+/*------------GETTER-SETTER----------------*/
     public void setValor(String valor) {
         this.valor = valor;
     }
-/*------------SETTER----------------*/
+
+
+    public List<String> getErrores() {
+        return errores;
+    }
+/*------------GETTER-SETTER----------------*/
 
 /*------------CONSTRUCTOR----------------*/
     public ElementoForm() {
+        this.validadores = new ArrayList<>();
+        this.errores = new ArrayList<>();
     }
 
     public ElementoForm(String nombre) {
@@ -24,8 +37,22 @@ abstract public class ElementoForm {
     }
 /*------------CONSTRUCTOR----------------*/
 
-
 /*------------MÉTODOS----------------*/
+
+    public ElementoForm addValidador(Validador validador){
+        this.validadores.add(validador);
+        return this;
+    }
+
+    public Boolean esValido(){
+        for (Validador v : this.validadores){
+            if (!v.esValido(this.valor)){
+                this.errores.add(String.format(v.getMensaje(),nombre));
+            }
+        }
+        return errores.isEmpty();
+    }
+
     abstract public String DibujarHTML();
 /*------------MÉTODOS----------------*/
 

@@ -2,7 +2,7 @@ package org.CCristian.POO_Clases_Abstractas.Formulario.Validador;
 
 public class LargoValidador extends Validador{
 
-    protected String mensaje = "el campo debe tener un MÍNIMO de %d y un MÁXIMO &d caracteres";
+    protected String mensaje = "el campo debe tener un MÍNIMO de %d y un MÁXIMO %d caracteres";
 
 //    %d: Especifica un formato para valores enteros (números enteros). Cuando utilizas %d en una
 //    cadena de formato, esperas que el valor que se insertará en ese lugar sea un número entero.
@@ -24,7 +24,7 @@ public class LargoValidador extends Validador{
     }
 
 
-    //    Para asignar los valores mínimos y máximos, o solo uno de ellos
+//Para asignar los valores mínimos y máximos, o solo uno de ellos
     public void setMin(int min) {
         this.min = min;
     }

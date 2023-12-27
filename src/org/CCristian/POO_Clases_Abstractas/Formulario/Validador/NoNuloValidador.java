@@ -2,7 +2,7 @@ package org.CCristian.POO_Clases_Abstractas.Formulario.Validador;
 
 public class NoNuloValidador extends Validador{
 
-    protected String mensaje = "el campo NO puede ser NULO";
+    protected String mensaje = "el campo %s NO puede ser NULO";
 
     @Override
     public void setMensaje(String mensaje) {

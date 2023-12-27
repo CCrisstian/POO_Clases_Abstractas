@@ -2,6 +2,7 @@ package org.CCristian.POO_Clases_Abstractas.Formulario;
 
 import org.CCristian.POO_Clases_Abstractas.Formulario.Elementos.*;
 import org.CCristian.POO_Clases_Abstractas.Formulario.Elementos.Select.Opcion;
+import org.CCristian.POO_Clases_Abstractas.Formulario.Validador.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,13 +10,25 @@ import java.util.List;
 public class EjemploForm {
     public static void main(String[] args) {
         InputForm UserName = new InputForm("UserName");
+        UserName.addValidador(new RequeridoValidador())
+        .addValidador(new LargoValidador(6,12));
+
         InputForm Password = new InputForm("Clave","Password");
+        Password.addValidador(new RequeridoValidador())
+        .addValidador(new LargoValidador(6,12));
+
+
         InputForm Email = new InputForm("Email","Email");
+        Email.addValidador(new RequeridoValidador())
+        .addValidador(new EmailValidador());
+
         InputForm Edad = new InputForm("Edad","Number");
+        Edad.addValidador(new NumeroValidador());
 
         TextAreaForm experiencia = new TextAreaForm("exp",5,9);
 
         SelectForm lenguaje = new SelectForm("lenguaje");
+        lenguaje.addValidador(new NoNuloValidador());
 
         lenguaje.addOpcion(new Opcion("1","Java"));
         lenguaje.addOpcion(new Opcion("2","Python"));
@@ -40,7 +53,7 @@ public class EjemploForm {
         saludar.setValor("Esta campo esta deshabilitado!");
         UserName.setValor("John Doe");
         Password.setValor("a1b2c3");
-        Email.setValor("John.Doe@correo.com");
+        Email.setValor("john.doe@correo.com");
         Edad.setValor("28");
         experiencia.setValor("... más de 10 años de experiencia ...");
 
@@ -62,6 +75,11 @@ public class EjemploForm {
 //        elemento en la iteración), y la parte después de la flecha especifica
 //        el cuerpo del método.
 
+        elementos.forEach(e->{
+           if (!e.esValido()){
+               e.getErrores().forEach(System.out::println);
+           }
+        });
 
     }
 }

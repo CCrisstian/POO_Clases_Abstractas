@@ -2,7 +2,7 @@ package org.CCristian.POO_Clases_Abstractas.Formulario.Validador;
 
 public class NumeroValidador extends Validador{
 
-    protected String mensaje = "el campo debe ser un NUMERO";
+    protected String mensaje = "el campo %s debe ser un NUMERO";
 
     @Override
     public void setMensaje(String mensaje) {
