@@ -1,5 +1,7 @@
 package org.CCristian.POO_Clases_Abstractas.Formulario.Elementos;
 
+import org.CCristian.POO_Clases_Abstractas.Formulario.Validador.LargoValidador;
+import org.CCristian.POO_Clases_Abstractas.Formulario.Validador.Mensaje.MensajeFormateable;
 import org.CCristian.POO_Clases_Abstractas.Formulario.Validador.Validador;
 
 import java.util.ArrayList;
@@ -47,7 +49,11 @@ abstract public class ElementoForm {
     public Boolean esValido(){
         for (Validador v : this.validadores){
             if (!v.esValido(this.valor)){
+                if (v instanceof MensajeFormateable){
+                    this.errores.add(((MensajeFormateable) v).getMensajeFormateado(nombre));
+                }else {
                 this.errores.add(String.format(v.getMensaje(),nombre));
+                }
             }
         }
         return errores.isEmpty();

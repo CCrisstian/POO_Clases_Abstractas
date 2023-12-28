@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a030e12-ebcc-47b9-a52a-93c7a4cbb934" name="Changes" comment="Nueva clase ABSTRACTA Validador">
-      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Validador/EmailValidador.java" afterDir="false" />
+    <list default="true" id="4a030e12-ebcc-47b9-a52a-93c7a4cbb934" name="Changes" comment="Casi completa implementación de clase ABSTRACTA Validador">
+      <change afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Validador/Mensaje/MensajeFormateable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/EjemploForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/EjemploForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Elementos/ElementoForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Elementos/ElementoForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Validador/LargoValidador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Validador/LargoValidador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Validador/NoNuloValidador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Validador/NoNuloValidador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Validador/NumeroValidador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Validador/NumeroValidador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Validador/RequeridoValidador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/CCristian/POO_Clases_Abstractas/Formulario/Validador/RequeridoValidador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +20,7 @@
       <list>
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -122,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703687515779</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Casi completa implementación de clase ABSTRACTA Validador">
+      <option name="closed" value="true" />
+      <created>1703713314110</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703713314110</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -132,6 +137,7 @@
     <MESSAGE value="Main casi completo, faltan mejoras.&#10;Archivo HTML de salida" />
     <MESSAGE value="Completo Clase:&#10;- ElementoForm&#10;- Opcion&#10;- SelectForm&#10;- InputForm&#10;- TextAreaForm" />
     <MESSAGE value="Nueva clase ABSTRACTA Validador" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nueva clase ABSTRACTA Validador" />
+    <MESSAGE value="Casi completa implementación de clase ABSTRACTA Validador" />
+    <option name="LAST_COMMIT_MESSAGE" value="Casi completa implementación de clase ABSTRACTA Validador" />
   </component>
 </project>

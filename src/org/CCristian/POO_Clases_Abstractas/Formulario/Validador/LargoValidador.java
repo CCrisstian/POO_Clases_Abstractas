@@ -1,8 +1,10 @@
 package org.CCristian.POO_Clases_Abstractas.Formulario.Validador;
 
-public class LargoValidador extends Validador{
+import org.CCristian.POO_Clases_Abstractas.Formulario.Validador.Mensaje.MensajeFormateable;
 
-    protected String mensaje = "el campo debe tener un MÍNIMO de %d y un MÁXIMO %d caracteres";
+public class LargoValidador extends Validador implements MensajeFormateable {
+
+    protected String mensaje = "el campo %s debe tener un MÍNIMO de %d y un MÁXIMO %d caracteres";
 
 //    %d: Especifica un formato para valores enteros (números enteros). Cuando utilizas %d en una
 //    cadena de formato, esperas que el valor que se insertará en ese lugar sea un número entero.
@@ -46,12 +48,17 @@ public class LargoValidador extends Validador{
 
     @Override
     public boolean esValido(String valor) {
-        this.mensaje = String.format(this.mensaje, this.min, this.max);
+//        this.mensaje = String.format(this.mensaje, this.min, this.max);
 
         if (valor == null){
             return true;
         }
         int largo = valor.length();
         return (largo >= min && largo <= max);
+    }
+
+    @Override
+    public String getMensajeFormateado (String campo){
+        return String.format(this.mensaje, campo ,this.min, this.max);
     }
 }
